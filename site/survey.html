@@ -6,6 +6,9 @@
     <meta name="author" content="Your Name">
     <meta name="description" content="A personal website with information about me and my favorite things.">
     <title>My Website</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+
     
 </head>
 <body>
@@ -21,42 +24,47 @@
             </nav>
         </header>   
         <main>
+            <main id=""creating-a-web-form></main>
             <h1>Survey</h1>
     <form action="https://formspree.io/f/YOUR_ENDPOINT" method="POST">
         <!-- Name Field -->
-        <label for="name_field">What is your name? *</label>
-        <input type="text" id="name_field" name="name_field" required><br><br>
+        <label for="name_field">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
+        <input type="text" name="name_field" id="name_field" required aria-required="true">
 
         <!-- Email Field -->
-        <label for="email_field">What is your email? *</label>
-        <input type="email" id="email_field" name="email_field" required><br><br>
+        <label for="email_field">What is your email address? <abbr title="required" aria-label="required">*</abbr></label>
+        <input type="email" name="email_field" id="email_field" required aria-required="true">
+
 
         <!-- Number Field -->
         <label for="best_whole_number">Which whole number is best?</label>
-        <input type="number" id="best_whole_number" name="best_whole_number" min="1"><br><br>
+        <input type="number" name="best_whole_number" id="best_whole_number" step="1" aria-valuemin="0" min="0">
+
 
         <!-- Date Field -->
         <label for="best_day">Which day is best?</label>
-        <input type="date" id="best_day" name="best_day"><br><br>
+        <input type="date" name="best_day" id="best_day">
+________________________________________
+
 
         <!-- Dropdown List -->
-        <label for="best_bear">Which bear is best? *</label>
-        <select id="best_bear" name="best_bear" required>
-            <option value="">--Select--</option>
+        <label for="best_bear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label>
+          <select id="best_bear" name="best_bear" required aria-required="true">
+            <option selected value="">&nbsp;</option>
             <option value="Black">Black</option>
             <option value="Brown">Brown</option>
             <option value="Care">Care</option>
             <option value="Panda">Panda</option>
             <option value="Polar">Polar</option>
             <option value="Teddy">Teddy</option>
-        </select><br><br>
+          </select>
+
 
         <!-- Radio Buttons -->
         <fieldset>
             <legend>Do you like radio buttons?</legend>
             <ul>
-                <li><input type="radio" id="yes" name="enjoys_radio_buttons" value="yes" checked>
-                <label for="yes">Yes</label></li>
+                <li><input type="radio" id="yes" name="enjoys_radio_buttons" value="yes">
                 
                 <li><input type="radio" id="no" name="enjoys_radio_buttons" value="no">
                 <label for="no">No</label></li>
@@ -64,11 +72,12 @@
                 <li><input type="radio" id="none" name="enjoys_radio_buttons" value="none">
                 <label for="none">None of your business</label></li>
             </ul>
-        </fieldset><br>
+        </fieldset>
 
         <!-- Multi-line Text Field -->
-        <label for="life_meaning">What is the meaning of life?</label><br>
-        <textarea id="life_meaning" name="life_meaning" rows="5" cols="50" placeholder="Enter the correct answer here"></textarea><br><br>
+        <label for="life_meaning">What is the meaning of life?</label>
+        +        <textarea id="life_meaning" name="life_meaning" rows="5" cols="50" placeholder="Enter the correct answer here"></textarea>
+        
 
         <!-- Submit Button -->
         <button type="submit">Send</button>

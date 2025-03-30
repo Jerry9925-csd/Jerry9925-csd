@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Your Name">
     <meta name="description" content="A personal website with information about me and my favorite things.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+
     <title>My Website</title>
     
 </head>
@@ -28,81 +31,86 @@
             <p>Hello! My name is Manav Patel. I am currently studying at Sault College and learning about HTML and web development. I enjoy coding, designing websites, and learning new technologies.</p>
             <p>In my free time, I like watching movies, reading books, and exploring new places. I am excited to develop my web skills further in this course!</p>
             <table>
-  <caption>Table 1. Current Courses</caption>
-  <thead>
-    <tr>
-      <th>Term</th>
-      <th>Code</th>
-      <th>Name</th>
-      <th>Hrs/Week</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="6">Fall</td>
-      <td>CSD105</td>
-      <td>Python</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>CMM115</td>
-      <td>Communications I</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>CSD120</td>
-      <td>Introduction to Web Development</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>CSO104</td>
-      <td>Introduction to Operating Systems and LAN</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>MTH122</td>
-      <td>Computer Mathematics</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>TNY130</td>
-      <td>Technology in Society</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td rowspan="4">Winter</td>
-      <td>CSA103</td>
-      <td>Business Applications I</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>CSD102</td>
-      <td>Programming Using C++</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>CSD212</td>
-      <td>Web Scripting Languages</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>CSO102</td>
-      <td>Introduction to Linux</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>CST104</td>
-      <td>PC Hardware and Networking</td>
-      <td>5</td>
-    </tr>
+  
+    <div id="making-a-table">
+                  <table>
+        <caption>Table 1. Current Courses</caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Term</th>
+            <th>Code</th>
+            <th colspan="10">Name</th>
+            <th>Hrs/Week</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="6">Fall</td>
+            <td>CSD105</td>
+            <td colspan="10">Python</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>CMM115</td>
+            <td colspan="10">Communications I</td>
+            <td>3</td>
+         </tr>
+          <tr>
+            <td>CSD120</td>
+            <td colspan="10">Introduction to Web Development</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>CSO104</td>
+           <td colspan="10">Introduction to Operating Systems and LAN</td>
+           <td>4</td>
+          </tr>
+          <tr>
+            <td>MTH122</td>
+            <td colspan="10">Computer Mathematics</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>TNY130</td>
+            <td colspan="10">Technology in Society</td>
+           <td>2</td>
+          </tr>
+          <tr>
+            <td rowspan="5">Winter</td>
+            <td>CSA103</td>
+            <td colspan="10">Business Applications I</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>CSD102</td>
+            <td colspan="10">Programming Using C++</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>CSD212</td>
+            <td colspan="10">Web Scripting Languages</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>CSO102</td>
+            <td colspan="10">Introduction to Linux</td>
+            <td>4</td>
+         </tr>
+         <tr>
+            <td>CST104</td>
+            <td colspan="10">PC Hardware and Networking</td>
+            <td>5</td>
+          </tr>
         </tbody>
-    <tfoot>
-      <tr>
-      <td colspan="3">Total</td>
-      <td>41</td>
-      </tr>
-            </tfoot>
-    </table>
+        <tfoot>
+          <tr>
+            <td colspan="12">Total</td>
+            <td>41</td>
+          </tr>
+        </tfoot>
+      </table>
+      </div>
+      
 
             <h2>My Favourite Things</h2>
             <a href="https://www.bcci.tv/">
